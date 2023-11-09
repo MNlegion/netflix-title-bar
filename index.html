@@ -1,67 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Test Title</title>
-  </head>
-  <body>
-    <aside class="sidebar">
-      <div class="menu-btn">
-        <img src="/" alt="menu" srcset="/" />
-      </div>
-
-      <div class="sidebar-items">
-        <div class="item">
-          <img src="/" />
-          <span>Home</span>
-        </div>
-      </div>
-    </aside>
-
-    <section>
-        <nav>
-            <a href="">
-                <img src="/" alt="youtube-logo">
-            </a>
-            <p>NavBar</p>
-        </nav>
-
-        <main>
-            <h1>Feed</h1>
-        </main>
-    </section>
-
-    <div id="menu">
-        <div class="menu-header">
-            <div class="menu-btn">
-                <img src="" alt="menu-icon">
-            </div>
-            <a href="#">
-                <img src="" alt="youtube-logo">
-            </a>
-        </div>
-
-        <div class="menu-group">
-            <div class="menu-item">
-                <img src="">
-                <span>Home</span>
-            </div>
-        </div>
-
-        <div class="menu-group">
-            <div class="menu-item">
-                <img src="">
-                <span>Library</span>
-            </div>
-            <div class="menu-item">
-                <img src="">
-                <span>History</span>
-            </div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b3685d63f8.js" crossorigin="anonymous"></script>
+    <title>Navbar Sidebar Menu</title>
+</head>
+<body>
+    <div id="navbar">
+        <a href="#" class="menu-bar" id="show-menu">
+            <i class="fa-solid fa-bars"></i>
+        </a>
     </div>
 
+    <nav id="nav-menu">
+        <ul class="nav-menu-items">
+            <div id="navbar-toggle">
+                <a href="#" class="menu-bars" id="hide-menu">
+                    <i class="fas fa-bars nav-icon"></i>
+                </a>
+                <a href="#">
+                    <h1><i class="fab fa-youtube" id="youtube-logo"></i>
+                    Youtube</h1>
+                </a>
+            </div>
+            <hr />
+            <div class="nav-section">
+                <li class="nav-text"><a href="#"><i class="fas fa-home nav-icon"></i>Home</a></li>
+                <li class="nav-text"><a href="#"><i class="fas fa-fire nav-icon"></i>Trending</a></li>
+                <li class="nav-text"><a href="#"><i class="fab fa-youtube nav-icon"></i>Subscriptions</a></li>
+            </div>
+            <hr />
+            <div class="nav-section">
+                <li class="nav-text"><a href="#"><i class="fas fa-play-circle nav-icon"></i>Library</a></li>
+                <li class="nav-text"><a href="#"><i class="fas fa-history nav-icon"></i>History</a></li>
+                <li class="nav-text"><a href="#"><i class="fas fa-clock nav-icon"></i>Saved</a></li>
+            </div>
+        </ul>
+    </nav>
+
+
     <script src="./script.js"></script>
-  </body>
+</body>
 </html>
